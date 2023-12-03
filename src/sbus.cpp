@@ -144,7 +144,7 @@ bool SbusRx::Parse() {
         data_.ch[14] = static_cast<int16_t>((buf_[20] >> 2) |
                                             ((buf_[21] << 6) & 0x07FF));
         data_.ch[15] = static_cast<int16_t>((buf_[21] >> 5) |
-                                            ((buf_[22] << 3) & 0x07FF));
+                                            ((buf_[22] << 3) & 0x07FF)); 
         /* CH 17 */
         data_.ch17 = buf_[23] & CH17_MASK_;
         /* CH 18 */
